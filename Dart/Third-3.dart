@@ -18,6 +18,21 @@ class Cookie{
   int _width = 5;
 
   // Getters
+  int get height => _height;
+  int get width => _width;
+
+  // Setters
+  set setHeight(int h){
+    _height = h;
+  }
+
+  // Stactic Variables/Functions
+  // We define Variables/Functions static so that it can be accessed outside class without creating object of the class
+  static const int maxCookies = 10;
+  static void bakeCookies(){
+    // print("Baking $height cookies"); // This will give error as height is not static
+    print("Baking $maxCookies cookies");
+  }
   // To create a private variable a read-only value outside the class
 
 
@@ -44,25 +59,9 @@ class Cookie{
 // }
 
 // Approach of using class with object.{Better Approach}
-// void main(){
-//   Cookie cookie = Cookie(shape:'Hello', size:20);
-//   cookie.isCooling();
-// }
-
-
-
-
-
-// sections of a class
-class Cookiee{
-  final String shape;
-  final double size;
-  
-  Cookiee({required this.shape, required this.size}){
-    baking();
-  }
-  
-
-   
-
+void main(){
+  Cookie cookie = Cookie(shape:'Hello', size:20);
+  cookie.isCooling();
+  cookie.setHeight = 10;
+  print(cookie.height);
 }
