@@ -1,5 +1,5 @@
 // Course Link: https://youtu.be/CzRQ9mnmh44
-// First 2-hours of the course
+// Duration: 0:00 - 1:46
 void main() {
   //Dart folows BODMAS rule
 
